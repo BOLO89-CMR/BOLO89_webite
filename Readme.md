@@ -38,4 +38,6 @@ To set up this project on your local machine, follow the steps below:
 
 6. Open the project with a live server to view changes in real time. 
 
+### For the French version please modify the code in the FR folder instead.
+
 We hope this helps you set up and work on the BOLO89 website repository. If you have any questions or concerns, feel free to reach out to the project maintainers.
