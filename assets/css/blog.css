@@ -35,7 +35,7 @@ margin: 0;
 
 .content-box {
   box-shadow: 5px 5px 5px 5px rgba(253, 141, 100, 0.2);
-    background-color: rgba(206, 165, 95, 0.7);
+    background-color: rgba(166, 105, 83, 0.6);
     width: 50%;
     height: 25%;
     position: absolute;
@@ -93,13 +93,13 @@ margin: 0;
 .first-div h2 {
   font-weight: 700;
   font-size: 2rem;
-  color: #cda45e;
+  color: rgb(166, 105, 83);
 }
 
 .first-div h3 {
   font-weight: 500;
   font-size: 2rem;
-  color: #cda45e;
+  color: rgb(166, 105, 83);
 }
 
 .grid-span {
@@ -108,7 +108,7 @@ margin: 0;
 }
 
 .grid-bold {
-  color: #cda45e;
+  color: rgb(166, 105, 83);
   font-weight: 500;
   font-size: 1.5rem;
 
@@ -117,7 +117,7 @@ margin: 0;
 .first-div h4 {
   font-weight: 700;
   font-size: 1.7rem;
-  color: #cda45e;
+  color: rgb(166, 105, 83);
 }
 
  .home-blog {
@@ -160,7 +160,8 @@ margin: 0;
   }
 
   .content-box {
-    left: 18rem;
+    left: 20rem;
+    top: 19rem;
   }
 
 
