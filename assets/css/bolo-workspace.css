@@ -1,7 +1,15 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   }
+
+  body {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
   .long-long {
     width: 100%;
     border-bottom: 5px #cda45e;
@@ -22,17 +30,6 @@
     position: absolute;
     top: 20rem;
   }
-  
-  .side-left {
-    width: 100%;
-    height: 100vh;
-    background: url("../img/bolo89/img4.jpg") top center;
-    background-size: auto;
-    position: relative;
-    padding: 0;
-    background-repeat: no-repeat;
-
-  }
 
   .seperate {
     display: flex;
@@ -48,27 +45,14 @@
     top: 40px;
     width: 100%;
   }
-  
-  .content-box {
-    box-shadow: 5px 5px 5px 5px rgba(253, 141, 100, 0.2);
-    background-color: rgb(214, 178, 115);
-      color: #000;
-      position: absolute;
-      left: 0;
-      width: 30%;
-      height: 100%;
+
+  .parent {
+    width: 100%;
+    max-width: 100%; 
+    margin: auto;
+    overflow: hidden;
   }
   
-  .content-box h2 {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      font-weight: bold;
-      font-size: 1.8rem;
-      bottom: 7rem;
-      position: relative;
-  }
   
   .order-list {
     top: 13rem;
@@ -88,31 +72,90 @@
   
   .first-div {
     color: #000;
-      position: absolute;
-      box-shadow: 5px 5px 5px 5px rgba(26, 26, 124, 0.2);
-      top: 44rem;
-      background-color: rgba(231, 231, 238, 0.5);
-      width: 90%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 2rem 2rem;
-      font-weight: 500;
-      font-size: 1.5rem;
+    position: absolute;
+    box-shadow: 5px 5px 5px 5px rgba(26, 26, 124, 0.2);
+    background-color: rgba(231, 231, 238, 0.5);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .work-para {
+    font-weight: 500;
+    font-size: 1.2rem;
+    width : 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .benefits {
+    font-weight: 500;
+    font-size: 1.2rem;
+     width : 72vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0; 
+    list-style-type: none; 
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #cda45e; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .list-item img {
+    width: 95%; 
+    height: auto;
+    margin-bottom: 10px;
+    
+  }
+
+  .arts li {
+    font-weight: 700;
+    font-size: 70%;
+  }
+
+  .arts-arts {
+    color:#cda45e;
+  }
+
+
+  .bold {
+    font-weight: bold; 
   }
   
   .first-div h2 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 77%;
     color: #cda45e;
     width: 80%;
   }
   
   .first-div h3 {
-    font-weight: 500;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 1.4rem;
     color: #cda45e;
   }
 
@@ -135,7 +178,7 @@
   
   .first-div h4 {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 70%;
     color: #cda45e;
   }
   
@@ -145,39 +188,87 @@
     }
 
     .bold {
-      color: #cda45e;
-    font-weight: 800;
+    color: #cda45e;
+    font-weight: 700;
     text-decoration: underline;
+    font-size: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0 3% 0;
     }
   
   @media screen and (min-width: 1024px) {
-    /* .body {
-      width: 100%;
-      height: 100vh;
-      background: url(../img/bolo89/img4.jpg) top center;
-      background-size: cover;
-      position: relative;
-      padding: 0;
-      background-repeat: no-repeat;
-  }
-   */
   .first-div {
-    top: 35rem;
+    top: auto;
+    width: 100%;   
+  }
+
+  .first-div h2 {
+    color: #cda45e;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .first-div h4 {
+    font-size: 95%;
+  }
+
+  .work-para {
+    font-size: 1.4rem;
+  }
+
+  .benefits {
+    width: 40vw;
+  }
+
+  .bold {
+    font-size: 77%;
+  }
+
+  .list-container {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 90%;
-    left: 4rem;
-   
+  }
+
+  .list-item {
+    width: calc(50% - 20px);
   }
   
-  .content-box h2 {
-    bottom: -10rem;
-    color: #fff;
   }
-  
+
+  @media (max-width: 600px) {
+    .list-item {
+      width: 100%; /* Full width on small screens */
+    }
   }
   
   @media screen and (min-width: 1280px) {
     .first-div {
-      top: 45rem;
+      top: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem 0 0 0;
+      font-weight: 500;
+      font-size: 1.5rem;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .benefits {
+      text-align: center;
+      width: 37vw;
+    }
+
+    .work-para {
+      width: 85vw;
     }
 
   
@@ -222,21 +313,8 @@
       width: 100%;
     }
   
-    .content-box h2 {
-      font-size: 1rem;
-      bottom: 7rem;
-      right: 8rem;
-    }
-  
-    .content-box {
-      width: 60%;
-      height: 15%;
-      position: absolute;
-      top: 8rem;
-      left: 4rem;
-      display: flex;
-      color: white;
-    }
+    
+   
   
     .order-list a {
       color: white;
@@ -249,15 +327,9 @@
       font-size: 0.7rem;
     }
   
-    .content-box h2 {
-      font-size: 1rem;
-      bottom: 1.1rem;
-      right: 0rem;
-    }
+   
   
-    .first-div {
-      top: 16rem;
-    }
+   
   
     .home-blog {
       display: block;
@@ -269,45 +341,17 @@
   }
   
   @media screen and (max-width: 414px) {
-    .content-box h2 {
-      font-size: 1rem;
-      bottom: 4rem;
-      right: 0rem;
-    }
-  
+
     .order-list {
       top: 3rem;
     }
   }
   
-  @media screen and (max-width: 768px) {
-    .first-div {
-      top: 22.5rem;
-    }
-  
-    .content-box {
-      width: 60%;
-      left: 5rem;
-    }
-  }
-  
-  
   @media screen and (max-width: 540px) {
-    .content-box {
-      width: 60%;
-      left: 4.5rem;
-      height: 30%;
-      top: 19rem;
-      /* top: 1116rem; */
-    }
-  
     .order-list {
       top: 2.8rem;
     }
   
-    .first-div {
-      top: 40rem;
-    }
   }
   
   
