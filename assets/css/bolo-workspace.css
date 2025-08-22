@@ -125,12 +125,43 @@
     box-sizing: border-box;
   }
 
-  .list-item img {
+  /* .list-item img {
     width: 95%; 
     height: auto;
     margin-bottom: 10px;
     
+  } */
+
+  .first {
+    width: 45%;
+    height: auto;
+    margin-bottom: 10px;
   }
+
+  .second {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .third {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .fourt {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .fifth {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
 
   .arts li {
     font-weight: 700;
